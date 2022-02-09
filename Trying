@@ -1,1 +1,10 @@
 df.blob_path.tolist()
+
+df['area1']=df['col'].apply(lambda x: 'Adult' if x is not None else '-1')
+
+
+'''print("\nList blobs in the container")
+generator = block_blob_service.list_blobs(container_name)
+for blob in generator:
+    print("\t Blob name: " + blob.name)
+'''

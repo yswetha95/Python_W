@@ -1,0 +1,131 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Arrays and Strings.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyMmapHdYftArUEiONiMmdit",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/yswetha95/Python_W/blob/main/new\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "FP3xnjaAoroZ",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "e48cf4da-218d-4597-d89f-24cbc820e561"
+      },
+      "source": [
+        "list_samp=[\"a\",\"b\",\"c\",\"a\",\"b\",\"c\"]\n",
+        "x=set(list_samp)\n",
+        "print(\"First Output: set looks like \" +str(x))\n",
+        "print(\"Second Output: Enumerate Function\")\n",
+        "for i,num in enumerate(list_samp):\n",
+        "  print(i,num)\n",
+        "\n"
+      ],
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "First Output: set looks like {'a', 'c', 'b'}\n",
+            "Second Output: Enumerate Function\n",
+            "0 a\n",
+            "1 b\n",
+            "2 c\n",
+            "3 a\n",
+            "4 b\n",
+            "5 c\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Creating an array of len n and has all zeroes**"
+      ],
+      "metadata": {
+        "id": "Wwf0nh6Y0UXc"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# creating an array of len n and has all zeroes\n",
+        "n=10\n",
+        "ans=[0]*n\n",
+        "ans"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zUJZKRQNwrQe",
+        "outputId": "e806bda2-c994-41cc-b115-b003e46ad555"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 16
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "G0NCaFEWo3Ky",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 167
+        },
+        "outputId": "246f72a0-0a46-4c8d-8821-462feb92da6c"
+      },
+      "source": [
+        "list2=list(x)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-5-4ca0cf9b6e7d>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mlist2\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mlist\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mx\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m: 'list' object is not callable"
+          ]
+        }
+      ]
+    }
+  ]
+}
